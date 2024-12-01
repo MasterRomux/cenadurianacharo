@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeef1; /* Color de fondo más suave */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #3b3b58; /* Color del encabezado */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 30px;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #4a4e69;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #4a4e69;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #22223b; /* Color del borde en foco */
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #22223b;
+    transform: translateY(-2px); /* Efecto de elevar el botón */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Esquinas redondeadas */
+}
+
+thead {
+    background-color: #4a4e69;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0; /* Efecto de resaltar fila al pasar el mouse */
+}
+
+tbody tr td {
+    position: relative;
+}
+
+tbody tr td:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3); /* Efecto de brillo al pasar el mouse sobre las celdas */
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button, select {
+        width: 100%;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+}

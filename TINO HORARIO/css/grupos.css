@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado principal */
+.main-header {
+    background-color: #7B1F34; /* Color vino */
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.main-header .logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.main-header .logo {
+    height: 60px;
+}
+
+.main-header #titulo-pagina {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.content {
+    padding: 20px;
+}
+
+/* Tabla estilizada */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table thead {
+    background-color: #7B1F34; /* Color vino */
+    color: white;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #7B1F34;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f0e4e4; /* Efecto hover */
+    cursor: pointer;
+}
